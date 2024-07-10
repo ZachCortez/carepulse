@@ -21,7 +21,9 @@ const SubmitButton = ({ isLoading, className, children }: ButtonProps) => {
                         className="animate-spin"
                     />
                 </div>
-            ): children}
+            ): (
+                children
+            )}
     </Button>
   )
 }
