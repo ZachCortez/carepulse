@@ -250,7 +250,7 @@ const RegisterForm = () => {
 
         <section className="space-y-6">
             <div className="mb-9 space-y-1">
-              <h2 className="sub-header">Identification and Verification </h2>  
+              <h2 className="sub-header">Identification and Verification 🪪</h2>  
             </div>
         </section>
 
@@ -291,7 +291,7 @@ const RegisterForm = () => {
 
         <section className="space-y-6">
             <div className="mb-9 space-y-1">
-              <h2 className="sub-header">Consent and Privacy</h2>  
+              <h2 className="sub-header">Consent and Privacy 🔏</h2>  
             </div>
         </section>
 
