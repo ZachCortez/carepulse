@@ -4,6 +4,7 @@ import { ID, Query } from "node-appwrite";
 import { APPOINTMENT_COLLECTION_ID, DATABASE_ID, databases } from "../appwrite.config";
 import { parseStringify } from "../utils";
 import { Appointment } from "@/types/appwrite.types";
+import { revalidatePath } from "next/cache";
 
 // CREATE APPOINTMENT
 export const createAppointment = async (appointment: CreateAppointmentParams) => {
@@ -39,11 +40,11 @@ export const updateAppointment = async ({
   
       if (!updatedAppointment) throw Error;
                     
-      // SMS notification------//
+      // TODO SMS notification------//
     //   const smsMessage = `Greetings from CarePulse. ${type === "schedule" ? `Your appointment is confirmed for ${formatDateTime(appointment.schedule!).dateTime} with Dr. ${appointment.primaryPhysician}` : `We regret to inform that your appointment for ${formatDateTime(appointment.schedule!).dateTime} is cancelled. Reason:  ${appointment.cancellationReason}`}.`;
     //   await sendSMSNotification(userId, smsMessage);
   
-    //   revalidatePath("/admin");
+      revalidatePath("/admin");
       return parseStringify(updatedAppointment);
     } catch (error) {
       console.error("An error occurred while scheduling an appointment:", error);
