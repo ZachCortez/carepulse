@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { getAppointment } from '@/lib/actions/appointment.actions';
 import { formatDateTime } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
-import { Doctors } from '@/constants/index';
+import { Doctors } from '@/constants';
 
 const Success = async ({searchParams,
     params: { userId },
