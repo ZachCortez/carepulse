@@ -1,6 +1,6 @@
 <div align="center">
   <br />
-   <img src="https://i.ibb.co/gJcYgCF/carepulse-readme.png" alt="CarePulse" border="0"></a>
+   <img src="https://i.ibb.co/2YccxnSD/carepulse-readme.png" alt="carepulse-readme" border="0">
   <br />
 
   <div>
